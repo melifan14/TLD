@@ -1,0 +1,22 @@
+package tts.pbo;
+
+
+public class TTSPBO {
+        public void cekMobil(Mobil m){
+            m.bentuk();
+            m.warna();
+            
+          
+        }
+   
+    public static void main(String[] args) {
+     TTSPBO a=new TTSPBO();
+        System.out.println("mobilavansa");
+     a.cekMobil(new MobilAvansa(20,"red","segiempat"));
+        System.out.println("");
+        System.out.println("mobiltruk");
+     a.cekMobil(new mobiltruk(50,"kuning","persegi panjang"));
+     
+    }
+    
+}
